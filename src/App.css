@@ -1,0 +1,64 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #1f005c,
+    #380070,
+    #9100a2,
+    #e30084,
+    #ff2532,
+    #ff9057,
+    #ffb56b
+  );
+}
+.card {
+  width: clamp(550px, 1rem, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  box-shadow: 16px 16px 16px 0px hsl(0, 0%, 60%);
+  transition: 0.3s;
+  padding: 16px;
+  background-color: hsl(0, 0%, 100%);
+}
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+  width: 100%;
+}
+
+.RandomQuote {
+  max-width: fit-content;
+  margin-top: 32px;
+  font-family: 'Lato', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  text-shadow: #ffb56b 0px 0px 10px;
+}
+.author {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  font-family: 'Dancing Script', cursive;
+  font-size: large;
+  font-weight: bold;
+}
+.next-quote {
+  box-shadow: 4px 4px 4px 0px hsl(294, 100%, 32%);
+  background-color: hsl(294, 100%, 32%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  padding: 8px;
+}
